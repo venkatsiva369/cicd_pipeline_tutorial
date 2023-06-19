@@ -5,7 +5,7 @@ pipeline{
                         steps {
                                 echo 'compiling ..'
                                 git url: 'https://github.com/venkatsiva369/cicd_pipeline_tutorial'
-                                sh Script: '/opt/apache-maven-3.9.2/bin/mvn compile'
+                                sh script: '/opt/apache-maven-3.9.2/bin/mvn compile'
                                 }
                         }
               }
