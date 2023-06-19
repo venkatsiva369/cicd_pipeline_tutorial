@@ -1,0 +1,12 @@
+pipeline{
+        agent any
+        stages {
+                stage('compile'){
+                        echo 'compiling ..'
+                        git url: 'https://github.com/venkatsiva369/cicd_pipeline_tutorial'
+                        sh Script: '/opt/apache-maven-3.9.2'
+                                }
+
+              }
+
+    }
